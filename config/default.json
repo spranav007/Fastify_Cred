@@ -1,0 +1,29 @@
+{
+  "logSeverity": "info",
+  "db": {
+    "mongodb": {
+      "uri": "Enter mongodb connection string"
+    }
+  },
+  "port": "8989",
+  "sessionStoreOptions": {
+    "uri": "Enter mongodb connection string",
+    "databaseName": "session",
+    "collection": "sessions"
+  },
+  "sessionOptions": {
+    "secret": "Generate a 32 character string",
+    "cookieName": "project_name",
+    "cookie": {
+      "secure": "false",
+      "httpOnly": true,
+      "maxAge": 1800000,
+      "signed": true,
+      "domain": ".domain.com"
+    },
+    "expires": 1800000,
+    "resave": false,
+    "saveUninitialized": true
+  },
+  "sessionApplied": false
+}
